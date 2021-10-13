@@ -1,3 +1,8 @@
+/* ==========Global========*/
+:root {
+  /*eferenciando a raiz (root/html)*/
+  --dark-blue: #363f5f; /* Criando uma função para a cor*/
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +12,94 @@
 body {
   background-color: #f0f2f5;
   font-family: 'padding', sans-serif;
+}
+.container {
+  width: min(90vw, 800px); /*Tamanho ajustável ao tamanho da viwport*/
+  /*background: cornflowerblue;*/
+  margin: auto;
+}
+/*==========Tittle==========*/
+h2 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--dark-blue);
+  font-weight: normal;
+}
+
+/*==========Header==========*/
+header {
+  background: #2d4a22;
+  padding: 2rem 0 10rem;
+  text-align: center;
+}
+#logo {
+  color: #fff;
+  font-weight: 100;
+}
+/*==========Balance=========*/
+#balance {
+  margin-top: -8rem;
+}
+#balance h2 {
+  color: #fff;
+  margin-top: 0;
+}
+/*==========Card==========*/
+.card {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  color: var(--dark-blue);
+}
+.card h3 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+.card p {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+.card.total {
+  background: #49aa26;
+  color: #fff;
+}
+/*==========Table==========*/
+#data-table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+}
+table tbody tr {
+  opacity: 0.7;
+}
+table tbody tr:hover {
+  /*Efeito ao passar o mouse*/
+  opacity: 1;
+}
+table th {
+  background: #fff;
+  font-weight: normal;
+  color: var(--dark-blue);
+  padding: 1rem 2rem;
+  text-align: left;
+}
+table td {
+  background: #fff;
+  padding: 1rem 2rem;
+}
+
+table thead th:first-child,
+table tbody td:first-child {
+  /*Selecionando o primeiro elemento do thead e tbody*/
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+/*==========Footer==========*/
+footer {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  font-size: 1.5rem;
+  color: va(--dark-blue);
+  opacity: 0.6;
 }
